@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="images/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <meta name="keywords" content="add to cart, add to cart javascript, localstorage add to cart, ecommerce shopping javascript, shooping cart demo"> -->
+    <title>Shopping</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Shopping Cart</div>
+        <div class="hamburger-icon">
+           <i class="fa fa-bars"></i>
+        </div>   
+        <ul>
+            <a href="index.html"><li>All</li></a>
+            <a href="mens.html"><li>Mens</li></a>
+            <a href="womens.html"><li>Womens</li></a>
+            <a href="watch.html"><li>Watch</li></a>
+        </ul>
+        <div class="right-flex">
+            <input type="search" placeholder="Search">
+            <i class="fa fa-shopping-cart"><span>0</span></i>
+        </div>
+    </div>
+<div class="cart-container">
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/men-1.jpg" alt=""> 
+        </div>
+        <div class="cart-name">
+            <a href="#">Formal Shirt</a>
+            <hr>
+        </div>
+        <div class="cart-flex">
+           <span>1200 </span>
+           <div class="rating">
+            (4.9)
+           </div>
+        </div>
+        <hr>
+        <button class="cart-button" onclick="showCart()">Add to Cart</button>
+      
+    </div>
+     <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/women-1.jpg" alt="">
+        </div>
+        <div class="cart-name">
+            <a href="#">Jeans and Top</a>
+            <hr>
+        </div>
+        <div class="cart-flex">
+               <span>2200 </span>
+               <div class="rating">
+                (4.2)
+               </div>
+        </div>
+        <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+    
+    </div>
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/watch-1.jpg" alt="">
+        </div>
+            <div class="cart-name">
+                <a href="#">Apple Watch</a>
+                <hr>
+            </div>
+            <div class="cart-flex">
+               <span>12000 </span>
+               <div class="rating">
+                (4.0)
+               </div>
+            </div>
+            <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/men-2.jpg" alt="">
+        </div>
+            <div class="cart-name">
+                <a href="#">Party Shirt</a>
+                <hr>
+            </div>
+            <div class="cart-flex">
+               <span>1000 </span>
+               <div class="rating">
+                (4.4)
+               </div>
+            </div>
+            <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+</div>
+
+<div class="cart-container">
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/women-2.jpg" alt=""> 
+        </div>
+        <div class="cart-name">
+            <a href="#">White Gown</a>
+            <hr>
+        </div>
+        <div class="cart-flex">
+           <span>1500 </span>
+           <div class="rating">
+            (4.5)
+           </div>
+        </div>
+        <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/watch-2.jpg" alt="">
+        </div>
+            <div class="cart-name">
+                <a href="#">Boat Watch</a>
+                <hr>
+            </div>
+            <div class="cart-flex">
+               <span>4000 </span>
+               <div class="rating">
+                (4.1)
+               </div>
+            </div>
+            <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/men-3.jpg" alt="">
+        </div>
+            <div class="cart-name">
+                <a href="#">Funky Shirt</a>
+                <hr>
+            </div>
+            <div class="cart-flex">
+               <span>500 </span>
+               <div class="rating">
+                (4.6)
+               </div>
+            </div>
+            <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/women-3.jpg" alt="">
+        </div>
+            <div class="cart-name">
+                <a href="#">Long Coat</a>
+                <hr>
+            </div>
+            <div class="cart-flex">
+               <span>1800 </span>
+               <div class="rating">
+                (4.8)
+               </div>
+            </div>
+            <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+</div>
+<div class="cart-container">
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/women-4.jpg" alt="">
+        </div>
+            <div class="cart-name">
+                <a href="#">Women Hoody</a>
+                <hr>
+            </div>
+            <div class="cart-flex">
+               <span>800 </span>
+               <div class="rating">
+                (3.8)
+               </div>
+            </div>
+            <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/watch-4.jpg" alt="">
+        </div>
+            <div class="cart-name">
+                <a href="#">Noise Watch</a>
+                <hr>
+            </div>
+            <div class="cart-flex">
+               <span>3200 </span>
+               <div class="rating">
+                (4.1)
+               </div>
+            </div>
+            <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/men-4.jpg" alt="">
+        </div>
+            <div class="cart-name">
+                <a href="#">Casual T-Shirt</a>
+                <hr>
+            </div>
+            <div class="cart-flex">
+               <span>200 </span>
+               <div class="rating">
+                (4.2)
+               </div>
+            </div>
+            <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+    <div class="cart-holder">
+        <div class="cart-img">
+            <img src="images/watch-3.jpg" alt="">
+        </div>
+            <div class="cart-name">
+                <a href="#">MI Smart Band</a>
+                <hr>
+            </div>
+            <div class="cart-flex">
+               <span>1000 </span>
+               <div class="rating">
+                (4.0)
+               </div>
+            </div>
+            <hr>
+     <button class="cart-button" onclick="showCart()">Add to Cart</button>
+       
+    </div>
+</div>
+
+
+ <script src="index.js">
+   
+ </script>  
+ 
+</body>
+</html>
